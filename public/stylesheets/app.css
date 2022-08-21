@@ -1,0 +1,13 @@
+#map {
+    width: 100%;
+    height: 300px;
+}
+
+#addHousing {
+    color: black;
+    font-size: 1.2rem;
+}
+
+#addHousing:hover {
+    color: cadetblue;
+}

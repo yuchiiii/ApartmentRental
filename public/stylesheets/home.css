@@ -1,0 +1,35 @@
+body {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("https://res.cloudinary.com/dhf2mlpr9/image/upload/v1660962867/CollegeRental/patrick-perkins-3wylDrjxH-E-unsplash_ymevcu.jpg");
+    background-size: cover;
+    background-position: center;
+    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+}
+
+.cover-container {
+    max-width: 75vw;
+}
+
+.nav-link {
+    padding: 0.25rem 0;
+    color: rgba(255, 255, 255, 0.8);
+    margin-left: 1rem;
+    border-bottom: 0.1rem solid transparent;
+}
+
+.nav-link:hover {
+    border-bottom-color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.nav-link.active {
+    color: white;
+    border-bottom-color: rgba(255, 255, 255, 0.8);
+}
+
+.btn-secondary,
+.btn-secondary:hover {
+    color: #333;
+    text-shadow: none;
+}

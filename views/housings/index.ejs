@@ -1,0 +1,35 @@
+<% layout('layouts/boilerplate') %>
+    <h1>Browse All Housings</h1>
+    <div class="mb-3">
+        <a id="addHousing" href="/housings/new">Add Your Listings Here!</a>
+    </div>
+    <% for (let housing of housings) {%>
+        <div class="card mb-3">
+            <div class="row">
+                <div class="col-md-4">
+                    <% if (housing.images.length) {%>
+                        <img class="img-fluid" alt="" src="<%=housing.images[0].url%>">
+                        <% } else { %>
+                            <img class="img-fluid" alt=""
+                                src="https://res.cloudinary.com/dhf2mlpr9/image/upload/v1657688378/CollegeRental/pgwqzmc7wsyn8o7lgi2m.jpg">
+                            <% } %>
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <%= housing.title %>
+                        </h5>
+                        <p class="card-text">
+                            <%= housing.description %>
+                        </p>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                <%= housing.location%>
+                            </small>
+                        </p>
+                        <a class="btn btn-primary" href="/housings/<%=housing._id%>">View <%=housing.title%></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <% } %>
